@@ -1,0 +1,27 @@
+# Secrets: never commit these
+.env
+.env.*
+!.env.example
+.circle/
+recovery_file*
+*.pem
+*.key
+
+# Dependencies and build output
+node_modules/
+dist/
+.vite/
+
+# Foundry output and installed libraries
+contracts/out/
+contracts/cache/
+/cache/
+/lib/
+broadcast/
+
+# Local tooling and runtime logs
+.compass/
+console.jsonl
+traces.jsonl
+*.log
+.DS_Store
